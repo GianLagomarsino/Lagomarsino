@@ -1,0 +1,46 @@
+
+
+antes del form agregar una tabla para que esta wea la descarge en excel
+
+            <table id="Exportar_a_Excel">
+
+
+
+
+
+
+
+
+
+vista
+///////////////////////////
+<form action="../../functions/ficheroExcel.php" method="post" target="_blank" id="FormularioExportacion">
+</br>
+</br>
+<table width="200" border="0">
+  <tr>
+    <td><h1>Exportar a Excel  <img src="../../images/excel.jpg" class="botonExcel" /></h1></td>
+    <td><h1>Imprimir<a href="#" onclick="window.print(); return false;">&nbsp;&nbsp;<img src="../../images/impresora.jpg" width="25" height="25"  alt=""/></a></h1></td>
+  </tr>
+</table>
+
+
+
+
+
+ 
+<input type="hidden" id="datos_a_enviar" name="datos_a_enviar" />
+</form>
+
+
+********************************************
+fichero_excel.php
+
+<?php
+header("Content-type: application/vnd.ms-excel; name='excel'");
+header("Content-Disposition: filename=ficheroExcel.xls");
+header("Pragma: no-cache");
+header("Expires: 0");
+
+echo $_POST['datos_a_enviar'];
+?>

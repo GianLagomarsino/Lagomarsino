@@ -1,0 +1,13 @@
+26 Agosto
+revisar los eliminar clientes no funcionan las validaciones 
+
+
+
+
+////////////////*****************//////////////////-----------------------------
+TRANSFORMAR TODO EL PROYECTO A LA VERSION NUEVA DEL XAMPP, PARA ESTO TOMAR EN CUENTA LO REALIZADO EN LISTAR VENTAS!!! NO FUNCIONAN LOS ARRAY PASARLO A MVC!
+
+-arreglar venta de productos (no actualiza el valor del precio total de la venta)
+-en productos cambiar la id de auto increment a una id alfanumerica
+
+

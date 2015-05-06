@@ -1,0 +1,15 @@
+-cLIENTE MOSTRAR DETALLE DE SERVICIOS REALIZADOS (DAR OPCION PARA BUSCAR POR AÑO) 
+listo lo de arriba, falta un boton para volver de detalles_naturalesFecha.php -->detalles.naturales.php
+copiar y hacer lo mismo para juridico
+lo mismo para sucurlales?
+
+
+
+
+-crear detalle de productos para ver la cantidad de veces que se han vendido, cantidad de veces utilizadas en servicios y en que servicios se han utilizado
+
+idem para repuestos y ventas (copiarlo de detalles servicios)
+
+
+
+

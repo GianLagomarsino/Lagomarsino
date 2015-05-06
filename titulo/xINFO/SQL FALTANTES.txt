@@ -1,0 +1,3 @@
+Arreglar los contar para que esten el modelo 3 capas
+
+tomar en cuenta los que ya fueron realiados y copiarlos

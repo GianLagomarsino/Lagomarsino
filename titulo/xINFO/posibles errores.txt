@@ -1,0 +1,52 @@
+ninguno?
+17-4
+**********************************************************
+
+09-04-2014
+
+Problema solucionado, se agrego un valor en la bd/ tabla pago_proveedores/ pagos_id
+y se modifico la query de consulta
+*******************************************
+se elimino lo de abajo pero el problema persiste,
+posbile error en la query de seleccionar todos los datos?
+
+*********************************************
+las querys de listar pagos pendientes/pagados
+
+
+en detalles de proveedores agrega el pago pendiente/pagado bien al listar pagos
+
+
+al agregar un producto en listar productos este se duplica en vez de hacerlo 2 veces
+
+
+
+
+error 
+modelos/productos
+
+rescata datos innecesarios
+
+
+
+controlador
+productos/producto_agregado.php
+
+
+ $pago_proveedores_id = mysql_insert_id();
+	 $result4 = $base_datos->sql_query($producto->updateCantidadPagoProveedor($pago_proveedores_id));
+
+
+modelo
+moelos/productos
+
+ function updateCantidadPagoProveedor($pago_proveedores_id)
+	{
+	 $updateCantidadPagoProveedor = "
+update productos, pago_proveedores  set
+pago_proveedores.total_producto = ".$this->cantidad." * (productos.precio_unitario)
+where productos.producto_id = pago_proveedores.producto_id
+and pago_proveedores.pago_proveedores_id =".$pago_proveedores_id."";
+			
+		return $updateCantidadPagoProveedor;	
+	}	

@@ -1,0 +1,10 @@
+revisar validaciones de numeros 
+
+http://localhost/lagomarsino/titulo/vistas/productos/ingresar_productos.php
+revisar que el precio del proveedor siempre sea menor al precio del nuestro producto
+
+modificar sucursales validar por rut que no se repitan ¿lo mismo para el ingresar?¿en el caso de que este este modificar el para que no se pueda cambiar el rut?
+
+modificar usuario
+arreglar rut o bloquear para que no se pueda cambiar
+

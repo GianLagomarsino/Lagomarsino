@@ -1,0 +1,107 @@
+<?php  
+             
+			 $servicio = new servicio();
+			 $servicio_id = $_GET['servicio_id'];
+			 
+			
+		
+		
+			//trabajador asociado al Servicio
+            $result=mysql_query($servicio->listarTrabajadoressxServicios($servicio_id));
+           
+                            
+                    if($row = mysql_fetch_array($result))
+                    {
+                        $trabajador_id			= $row['trabajador_id'];
+						$nombre			= $row['nombre'];
+						$apellido_paterno 			= $row['apellido_paterno'];
+						$apellido_materno 	= $row['apellido_materno'];
+						$rut					= $row['rut'];						
+						$direccion 				= $row['direccion'];
+						$telefono				= $row ['telefono'];
+						$celular 				= $row['celular'];
+						$sueldo 		        	= $row['sueldo'];
+
+						
+						
+
+   
+						   
+						   echo"
+						   <h3>Trabajador Encargado</h3>
+						   <table border='1' width='200'>
+          					<thead>
+							<th>Rut</th>
+							<th>Nombre Completo</th>
+							<th>Direccion</th>
+							<th>Telefono</th>
+							<th>Celular</th>
+
+							</thead>
+							<tr class = 'light'>
+							<td><a href='../trabajadores/detalles_trabajadores.php?trabajador_id=".$trabajador_id."'>".$rut."</td>
+							<td>".$nombre." ".$apellido_paterno." ".$apellido_materno."</td>
+							<td>".$direccion."</td>
+							<td>".$telefono."</td>
+							<td>".$celular."</td>
+							
+								  </table>";
+							}
+						   
+						   
+					
+						   
+						   
+					
+					
+?>
+
+<?php  
+             
+			 $servicio = new servicio();
+			 $servicio_id = $_GET['servicio_id'];
+			 
+			
+		
+		
+			//trabajador asociado al Servicio
+            $result3=mysql_query($servicio->listarSucursalesxServicios($servicio_id));
+           
+                            
+                    if($row = mysql_fetch_array($result3))
+                    {
+                        $sucursal_id			= $row['sucursal_id'];
+						$nombre_sucursal			= $row['nombre_sucursal'];
+						$nombre_encargado 			= $row['nombre_encargado'];
+						$direccion_sucursal 	= $row['direccion_sucursal'];
+			
+
+						
+						
+
+   
+						   
+						   echo"
+						   <h3>Sucursal</h3>
+						   <table  width='100%' border='1' cellpadding='0' cellspacing='0'>
+          					<thead>
+							<th>Nombre Sucursal</th>
+							<th>Nombre Encargado</th>
+							<th>Direccion</th>
+							
+							</thead>
+							<tr class = 'light'>
+							<td><a href='../sucursales/detalles_sucursales.php?sucursal_id=".$sucursal_id."'>".$nombre_sucursal."</a></td>
+							<td>".$nombre_encargado."</td>
+							<td>".$direccion_sucursal."</td>
+							
+								  </table>";
+							}
+						   
+						   
+					
+						   
+						   
+					
+					
+?>  
